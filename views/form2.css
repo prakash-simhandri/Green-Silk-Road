@@ -1,0 +1,153 @@
+body {font-family: Arial, Helvetica, sans-serif;
+/*          background-color:#90ee90; */
+            background-image:url("https://cdn.glitch.com/fde7c508-763b-4a1d-83ed-d4a294ac2ec7%2Fbackground-beautiful-beauty-296890.jpg?v=1560504932624");
+            background-repeat:no-repeat;
+            background-size: cover;}
+            * {box-sizing: border-box;}
+            input,textarea,select{
+              background: rgba(255,255,255,0.4);
+            }
+            h1{
+              text-align:center;
+              color: white;
+            }
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 2px solid black;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+
+            input[type=submit] {
+              background-color: blue;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            /*   backgroun-color:red; */
+            }
+
+            input[type=submit]:hover {
+              background-color: red;
+              padding:15px 25px;
+            }
+
+            .container {
+              border-radius: 5px;
+              /*background-color: #f2f2f2;*/
+              padding-left:20%;
+              padding-right:20%;
+            }
+
+            .border{
+              /*background:#09DBCD;*/
+              padding:50px;
+              margin:20px auto 50px;
+              border: 2px solid  #1affff;
+            }
+
+/*             .profile{
+              width:80%;
+              margin:0;
+              padding: 0;
+              display:flex;
+              justify-content:space-between;
+            } */
+            .profile img{
+                padding-bottom:4%;
+
+            }
+            input[type=Host_number]{
+              width: 7%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-left: 60px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+              .lang_div{
+              border-style: solid;
+              padding: 9px;
+            }
+            .lang_div input{
+              margin-left: 21px;
+            }
+            .lang_list{
+              margin: 1% 0% 0% 20%;
+
+            }
+            .lang_div span{
+                color: white;
+              }
+              label{
+              color: white;
+              font-family: "Times New Roman", Times, serif;
+            }
+            .sedein{
+              margin-left: 300px;
+              margin-top: -250px;
+              margin-bottom: 130px;
+            }
+            @media only screen and (max-width: 600px) {
+/*               .profile img{
+                width:100%;
+                height:85%;
+                padding-bottom:10%;
+              } */
+              .profile{
+              display:flex;
+              align-items: center;
+              flex-direction:column;
+
+            }
+              .container {
+              border-radius: 5px;
+              /*background-color: #f2f2f2;*/
+              padding-left:0%;
+              padding-right:0%;
+            }
+            h1{
+              margin-left:1.5%;
+            }
+             input[type=Host_number]{
+              width: 28%;
+            }
+             .lang_div input{
+              margin-left: 30px;
+            }
+            .lang_div{
+              padding: 7px;
+              margin: 0% -13% 0% -13%;
+            }
+             .lang_list{
+              margin: 1% 0% 0% 20%;
+
+            }
+            }
+            .imagechange{
+              height: 220px;
+              width: 200px;
+              /*border: 6px solid black;*/
+              border-radius: 25px;
+              margin: -15px 0px -10px 0px;
+              cursor: pointer;
+            }
+            @media only screen and (max-width: 1000px){
+             #form{
+              width: 200px;
+            } 
+
+              .sedein{
+              margin-left: 0px;
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+            }

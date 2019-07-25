@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="form2.css">
+  <title>Organisation Detail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://tame-spectroscope.glitch.me/style.css">
+<link rel="icon" type="image/jpg" href="https://comps.canstockphoto.com/letter-t-sign-design-template-element-eps-vectors_csp48692731.jpg">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+<h1>New Organisation Form</h1>
+
+<div class="container">
+<div class="border">
+  <form action="/process_post2" method="post">
+  	
+  <div class="profile">
+  <img name="user_profile" class="imagechange" id="blah" src="https://image.shutterstock.com/z/stock-vector-folder-icon-vector-with-person-personal-file-of-user-profile-information-avatar-in-glyph-pictogram-701343115.jpg">
+  <script>
+         function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            $('#blah')
+              .attr('src', e.target.result)
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+    </script>
+  </div><br>
+  <input onchange="readURL(this)" id="form" type="file" name="img" value="choose Image">
+    
+    <div class="sedein">
+    <label for="fname">Organisation Name</label>
+    <input type="text" id="fname" name="Organisation_name" placeholder="Your name.." required>
+
+    <label for="lname">Website Link</label>
+    <input type="text" id="lname" name="Website_Link" placeholder="Your last name.." required>
+    </div>
+    
+    <label for="email">Email address</label>
+    <input type="text" id="email" name="Email" placeholder="Your Email.." required>
+
+    <label for="number">Phone number</label>
+    <input type="text" name="Mobile_number" placeholder="Your Number.." required>
+
+    <label for="text">Address</label>
+    <input type="text" name="Address" placeholder="Your Address.." required>
+
+     <label for="country">Your main area of work</label>
+    <select id="country" name="Works">
+      <option value="select">select</option>
+      <option value="Primary education">Primary education</option>
+      <option value="Secondary education">Secondary education</option>
+      <option value="Higher education">Higher education</option>
+      <option value="Reforestation ">Reforestation</option>
+      <option value="Nature conservation">Nature conservation</option>
+      <option value="Agriculture">Agriculture </option>
+      <option value="Waste management ">Waste management</option>
+      <option value="Water">Water</option>
+      <option value="Energy">Energy</option>
+      <option value="Health">Health</option>
+      <option value="Culture and art">Culture and art</option>
+      <option value="Social innovation">Social innovation</option>
+      <option value="Human Rights">Human Rights</option>
+    </select>
+    
+     <label for="country">Second area of work</label>
+    <select id="country" name="Works">
+      <option value="select">select</option>
+      <option value="Primary education">Primary education</option>
+      <option value="Secondary education">Secondary education</option>
+      <option value="Higher education">Higher education</option>
+      <option value="Reforestation ">Reforestation</option>
+      <option value="Nature conservation">Nature conservation</option>
+      <option value="Agriculture">Agriculture </option>
+      <option value="Waste management ">Waste management</option>
+      <option value="Water">Water</option>
+      <option value="Energy">Energy</option>
+      <option value="Health">Health</option>
+      <option value="Culture and art">Culture and art</option>
+      <option value="Social innovation">Social innovation</option>
+      <option value="Human Rights">Human Rights</option>
+    </select>
+    
+    
+    <label for=number>Fields</label>
+    <input type="text" placeholder="Your Fields.." name="fields">
+
+    <label for=number>Nr of volunteers we can host ?</label><br>
+    <input type="Host_number" name="host_number"><br>
+
+    <label for="country">Languages</label><br><br>
+    <div class="lang_div">
+    <input type="checkbox" name="vehicle" value="English" checked><span> English</span> 
+    <input type="checkbox" name="vehicle" value="Hindi"><span> Hindi</span>
+    <input type="checkbox" name="vehicle" value="Tamil"><span> Tamil</span>
+    <input type="checkbox" name="vehicle" value="French"><span> French</span>
+    <input type="checkbox" name="vehicle" value="Russian"><span> Russian</span>
+    <input type="checkbox" name="vehicle" value="Turkish"><span> Turkish</span>
+    <input type="checkbox" name="vehicle" value="Farsi"><span> Farsi</span><br><br>
+    <input type="checkbox" name="vehicle" value="Arab"><span> Arab</span> 
+    <input type="checkbox" name="vehicle" value="German"><span> German</span>
+    <input type="checkbox" name="vehicle" value="Italian"><span> Italian</span>
+    <input type="checkbox" name="vehicle" value="Dutch"><span> Dutch</span>
+    <input type="checkbox" name="vehicle" value="Telugu"><span> Telugu</span>
+    <input type="checkbox" name="vehicle" value="Marathi"><span> Marathi</span>
+    <input type="checkbox" name="vehicle" value="Nepali"><span> Nepali</span><br><br>
+    <div id="move_1">
+    <label for="country">Other</label>
+    <input class="lang_list" list="browsers" name="Languages_lists">
+  </div>
+    </div><br><br>
+  
+     <label for="number">Can they use the kitchen? </label><br><br>
+    <input type="radio" name="negative" value="yes"><span style="color: white"> Yes</span>
+    <input type="radio" name="negative" value="no"><span style="color: white"> NO</span><br><br><br>
+    <label for="subject">Description</label>
+    <textarea id="subject" name="Description" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <label >Needs</label>
+    <textarea id="skills" name="User_Needs" placeholder="What are the organsation needs....." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+</div>
+
+</body>
+</html>

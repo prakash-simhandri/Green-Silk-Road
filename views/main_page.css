@@ -1,0 +1,113 @@
+body{
+	background-image: url("https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/Pillars_RoadTrips_OR_RD_11220565_1280x640.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.header{
+	text-align: center;
+	opacity: 0.8;
+	background-color: black;
+	/*position: fixed;*/
+	padding: 0.2%;
+	width: 100.7%;
+	margin: -15px -5px 0px -10px;
+
+}
+.header h1{
+	color: white;
+/* 	text-shadow: 3px 3px 5px blue; */
+	font-size: 40px;
+}
+#br_tab{
+    padding: 7px;
+}
+.ABOUT_data{
+	opacity: 0.7;
+    background-color:  black;
+    margin: 0% 15% 0% 15%;
+    color: white;
+    padding: 28px;
+}
+.ABOUT_data p{
+	font-size: 32px;
+  font-family: Georgia, serif;
+}
+.ABOUT_data h1{
+	font-size: 45px;
+	text-align: center;
+/* 	text-shadow: 3px 3px 5px red; */
+}
+c{
+	margin-left: 80px;
+}
+.join_data{
+	opacity: 0.7;
+    background-color:  black;
+    margin: 10% 15% 0% 15%;
+    color: white;
+    padding: 28px;
+}
+.join_data h2{
+	font-size: 35px;
+	margin-left: 10%;
+}
+.join_data h3{
+	margin-left: 61%;
+	font-size: 35px;
+	margin-top:-7.8%;
+}
+.join_data a{
+	border: 2px solid black;
+	font-size: 20px;
+	background-color: red;
+	text-decoration: none;
+	color: white;
+}
+.join_data a:hover{
+	background-color: blue;
+	font-size: 30px;
+	border-radius: 10px;
+}
+.join_data2{
+	opacity: 0.7;
+    background-color:  black;
+    margin: 10% 15% 0% 15%;
+    color: white;
+    padding: 28px;
+}
+.join_data h1{
+	font-size: 45px;
+	text-align: center;
+}
+.join_data h2{
+	font-size: 35px;
+}
+.join_data a{
+	border: 2px solid black;
+	font-size: 20px;
+	background-color: red;
+	text-decoration: none;
+	color: white;
+}
+.join_data a:hover{
+	background-color: blue;
+	font-size: 30px;
+	border-radius: 10px;
+}
+@media screen and (max-width: 1240px){
+	.join_data h2{
+		text-align: center;
+	}
+	.join_data h3{
+		margin-top:0%;
+		text-align: center;
+		margin-left: 0px;
+	}
+	.join_data{
+		margin: 0% 0% 0% 0%;
+	}
+	.ABOUT_data{
+		margin: 0% 0% 0% 0%;
+	}
+}

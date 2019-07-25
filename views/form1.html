@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="form1.css">
+  <title>Contact Detail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href="https://rain-shake.glitch.me/form1.css"> -->
+<link rel="icon" type="image/jpg" href="https://comps.canstockphoto.com/letter-t-sign-design-template-element-eps-vectors_csp48692731.jpg">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<h1>Contact Form</h1>
+
+<div class="container">
+<div class="border">
+  <form action="/process_post" method="post">
+    <div class="profile">
+  <img name="user_profile" class="imagechange" id="blah" src="https://image.shutterstock.com/z/stock-vector-folder-icon-vector-with-person-personal-file-of-user-profile-information-avatar-in-glyph-pictogram-701343115.jpg">
+  <script>
+     function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('#blah')
+          .attr('src', e.target.result)
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  </script>
+</div><br>
+<input onchange="readURL(this)" id="form" type="file" name="img" value="choose Image">
+    
+    <div class="sedein">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+
+    <label for="email">Email address</label>
+    <input type="text" id="email" name="email" placeholder="Your Email.."><br><br>
+
+    <label for=number>Phone number</label>
+    <input type="text" placeholder="Your Number.." name="phone">
+
+    <label for=number>Fields</label>
+    <input type="text" placeholder="Your Fields.." name="fields">
+
+    <label for=number>Your Age</label><br>
+    <input type="Age" name="User_Age"><br>
+
+    <label for="number">Join Date</label>
+    <input type="date" name="Join_date">
+
+    <label for="number">Leaving Date</label>
+    <input type="date" name="leaving_date">
+
+    <label for="number">Traveling as a group? </label><br><br>
+    <input type="radio" name="negative" value="yes"><span style="color: white"> Yes</span>
+    <input type="radio" name="negative" value="no"><span style="color: white"> NO</span><br><br>
+
+    <textarea name="group_bio" placeholder="if yes name of the group?" style="height:200px"></textarea>
+
+
+    <label for="country">Nationality</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+     <label for="country">Languages</label><br><br>
+    <div class="lang_div">
+    <input type="checkbox" name="vehicle" value="English" checked><span> English</span> 
+    <input type="checkbox" name="vehicle" value="Hindi"><span> Hindi</span>
+    <input type="checkbox" name="vehicle" value="Tamil"><span> Tamil</span>
+    <input type="checkbox" name="vehicle" value="French"><span> French</span>
+    <input type="checkbox" name="vehicle" value="Russian"><span> Russian</span>
+    <input type="checkbox" name="vehicle" value="Turkish"><span> Turkish</span>
+    <input type="checkbox" name="vehicle" value="Farsi"><span> Farsi</span><br><br>
+    <input type="checkbox" name="vehicle" value="Arab"><span> Arab</span> 
+    <input type="checkbox" name="vehicle" value="German"><span> German</span>
+    <input type="checkbox" name="vehicle" value="Italian"><span> Italian</span>
+    <input type="checkbox" name="vehicle" value="Dutch"><span> Dutch</span>
+    <input type="checkbox" name="vehicle" value="Telugu"><span> Telugu</span>
+    <input type="checkbox" name="vehicle" value="Marathi"><span> Marathi</span>
+    <input type="checkbox" name="vehicle" value="Nepali"><span> Nepali</span><br><br>
+    <div id="move_1">
+    <label for="country">Other</label>
+    <input class="lang_list" list="browsers" name="Languages_lists">
+  </div>
+    </div><br>
+
+    <label for="subject">Short bio</label>
+    <textarea id="subject" name="description" placeholder="tell us about your life journey till now and why you're keen to join" style="height:200px"></textarea>
+
+    <label >Skills</label>
+    <textarea id="skills" name="skills" placeholder="What are the skills you have....." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+</div>
+
+
+</body>
+</html>
